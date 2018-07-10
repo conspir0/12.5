@@ -22,7 +22,7 @@ function createTweet(input) {
     
     var dataElement = document.createElement('div');
     dataElement.innerHTML = data.content;
-    var quoteText = dataElement.innerHTML.trim();
+    var quoteText = dataElement.innerText.trim();
     var quoteAuthor = data.title;
     
     if (!quoteAuthor.length) {
